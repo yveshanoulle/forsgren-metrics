@@ -29,4 +29,4 @@ updates:
     # release before it reaches installations. Set default-days: 0 to get
     # releases at the next daily check (forsgren#14).
     cooldown:
-      default-days: 3
+      default-days: 0
