@@ -1,0 +1,32 @@
+# Proposes each new forsgren release as a pull request: Dependabot moves the
+# pinned `uses: yveshanoulle/forsgren/.github/workflows/<workflow>@<commit>
+# # vX.Y.Z` lines in .github/workflows/forsgren.yml and forsgren-update.yml to
+# the new release's commit and tag. Merging that pull request is the one click
+# that updates forsgren (forsgren#14); with auto_update: true in
+# forsgren.config.yml, forsgren-update.yml merges it for you (forsgren#58). It
+# never touches forsgren.config.yml or data/.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    # Every day, weekends included: interval daily runs Monday to Friday
+    # only, so a release on a Friday evening waited until Monday.
+    schedule:
+      interval: cron
+      cronjob: "0 4 * * *"   # 04:00, before the daily forsgren run
+      timezone: UTC
+    commit-message:
+      prefix: forsgren
+    # One pull request per release: Dependabot sees each pinned forsgren
+    # workflow as its own dependency, so without this group a release opens
+    # one pull request for forsgren.yml and another for forsgren-update.yml
+    # (forsgren#61).
+    groups:
+      forsgren:
+        patterns:
+          - "yveshanoulle/forsgren/*"
+    # A release is proposed once it is 3 days old: a window to replace a bad
+    # release before it reaches installations. Set default-days: 0 to get
+    # releases at the next daily check (forsgren#14).
+    cooldown:
+      default-days: 3
