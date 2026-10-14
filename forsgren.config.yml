@@ -1,0 +1,12 @@
+# forsgren configuration: what this installation measures.
+# Reference: https://github.com/yveshanoulle/forsgren#configuration
+version: 1
+view: standard
+auto_update: true
+auto_update_level: major
+history_days: 1825
+projects:
+  - name: Forsgren
+    repositories:
+      - name: yveshanoulle/forsgren
+        deployment: release
