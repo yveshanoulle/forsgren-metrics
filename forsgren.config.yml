@@ -5,6 +5,7 @@ view: standard
 auto_update: true
 auto_update_level: major
 history_days: 1825
+history_page: false  # off until the History page reads better (forsgren#198)
 projects:
   - name: Forsgren
     repositories:
