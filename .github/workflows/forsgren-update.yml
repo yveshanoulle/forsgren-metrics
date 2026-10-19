@@ -17,4 +17,4 @@ jobs:
       contents: write       # merge the pull request
       pull-requests: write  # merge the pull request
       actions: write        # start forsgren.yml after the merge
-    uses: yveshanoulle/forsgren/.github/workflows/auto_update.yml@f79977068e567b5a210830c19320ba8798b5b73a # v1.11.0
+    uses: yveshanoulle/forsgren/.github/workflows/auto_update.yml@790b3f444b1481df2386e1e29edf1b1e9af94b34 # v1.11.1
