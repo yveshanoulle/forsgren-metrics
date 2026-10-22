@@ -6,6 +6,7 @@ auto_update: true
 auto_update_level: major
 history_days: 1825
 history_page: unlisted  # generated at history.html, not in the menu, while it is in beta (forsgren#200)
+issues_page: false  # hidden on this installation (forsgren#285)
 projects:
   - name: Forsgren
     repositories:
