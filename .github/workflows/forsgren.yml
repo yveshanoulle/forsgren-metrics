@@ -19,7 +19,7 @@ jobs:
       id-token: write  # lets actions/deploy-pages prove the run's identity
       pull-requests: read  # optional: lets the page footer name Dependabot's waiting pull request for a newer forsgren release; without it the footer only says the release is available
       issues: write  # lets forsgren open its setup issue when this version needs more configuration; without it, the job summary and page footer say so
-    uses: yveshanoulle/forsgren/.github/workflows/metrics.yml@0b2dd7a797dd8b2f39be948ee4d25fe17f67b653 # v1.27.0
+    uses: yveshanoulle/forsgren/.github/workflows/metrics.yml@da945354204c86bb3707af03f47717002209dc5d # v1.27.1
     secrets:
       # Every measured repository is public: the run's own token reads
       # them. Copying the template's files over this one undoes it.
