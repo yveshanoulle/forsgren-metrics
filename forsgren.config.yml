@@ -15,5 +15,5 @@ projects:
     repositories:
       - name: yveshanoulle/forsgren
         deployments:
-          release: Release
+          release: {label: Releases, paths: [cmd/, internal/, go.mod, go.sum, agent-installer.md, agent-upgrade.md, agent-delete.md]}
           environment=github-pages: {label: Website, paths: [README.md, cmd/readmepage/, internal/readmepage/, internal/page/styles.css, Scripts/build_starter_page.sh]}
