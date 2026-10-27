@@ -1,9 +1,9 @@
-# forsgren failures v1
-repository,issue,opened_at,closed_at,failure_start
-yveshanoulle/forsgren,250,2026-10-21T01:12:55Z,2026-10-21T03:19:28Z,
-yveshanoulle/forsgren,377,2026-10-23T20:48:31Z,2026-10-23T23:30:53Z,2026-10-23T20:38:17Z
-yveshanoulle/forsgren,383,2026-10-24T02:16:24Z,2026-10-24T04:23:04Z,2026-10-24T02:10:06Z
-yveshanoulle/forsgren,384,2026-10-24T06:09:39Z,2026-10-24T08:18:39Z,2026-10-24T05:58:52Z
-yveshanoulle/forsgren,459,2026-10-26T08:50:34Z,,
-yveshanoulle/forsgren,459,2026-10-26T08:50:34Z,2026-10-26T10:47:02Z,
-yveshanoulle/forsgren,462,2026-10-26T10:02:48Z,,
+# forsgren failures v2
+repository,issue,opened_at,closed_at,failure_start,service
+yveshanoulle/forsgren,250,2026-10-21T01:12:55Z,2026-10-21T03:19:28Z,,
+yveshanoulle/forsgren,377,2026-10-23T20:48:31Z,2026-10-23T23:30:53Z,2026-10-23T20:38:17Z,
+yveshanoulle/forsgren,383,2026-10-24T02:16:24Z,2026-10-24T04:23:04Z,2026-10-24T02:10:06Z,
+yveshanoulle/forsgren,384,2026-10-24T06:09:39Z,2026-10-24T08:18:39Z,2026-10-24T05:58:52Z,
+yveshanoulle/forsgren,459,2026-10-26T08:50:34Z,,,
+yveshanoulle/forsgren,459,2026-10-26T08:50:34Z,2026-10-26T10:47:02Z,,
+yveshanoulle/forsgren,462,2026-10-26T10:02:48Z,,,
