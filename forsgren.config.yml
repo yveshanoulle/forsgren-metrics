@@ -13,4 +13,4 @@ projects:
       - name: yveshanoulle/forsgren
         deployments:
           release: Releases
-          environment=github-pages: {label: forsgren.be, paths: [README.md, cmd/readmepage/, internal/readmepage/, internal/page/styles.css, Scripts/build_starter_page.sh]}
+          environment=github-pages: {label: website, paths: [README.md, cmd/readmepage/, internal/readmepage/, internal/page/styles.css, Scripts/build_starter_page.sh]}
