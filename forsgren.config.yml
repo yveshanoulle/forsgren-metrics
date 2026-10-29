@@ -4,6 +4,7 @@ version: 1
 view: standard
 auto_update: true
 auto_update_level: major
+dora_days: 180
 history_days: 1825
 working_hours: 24
 history_page: false # not generated 
