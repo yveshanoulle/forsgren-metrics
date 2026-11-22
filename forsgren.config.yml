@@ -7,8 +7,8 @@ auto_update_level: major
 dora_days: 180
 history_days: 1825
 working_hours: 24
-history_page: false # not generated 
-issues_page: unlisted 
+history_page: false # not generated
+issues_page: unlisted
 days_page: unlisted
 # generated at issues.html, not in the menu, while it is in beta (forsgren#200)
 tbd_time_to_main: false

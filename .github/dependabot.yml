@@ -5,6 +5,12 @@
 # that updates forsgren (forsgren#14); with auto_update: true in
 # forsgren.config.yml, forsgren-update.yml merges it for you (forsgren#58). It
 # never touches forsgren.config.yml or data/.
+# The pin of forsgren's merge policy in .github/workflows/dependabot_merge.yml
+# is kept out of the forsgren group: forsgren-update.yml merges only a pull
+# request that moves its two pins, so that pin gets a pull request of its
+# own. It and every other Actions update are the Dependabot merge policy's
+# (.github/dependabot-merge.conf): patch and minor merge on their own once
+# Checks is green (DEPENDABOT_AUTOMERGE on); a major is a manual merge.
 version: 2
 updates:
   - package-ecosystem: github-actions
@@ -25,6 +31,8 @@ updates:
       forsgren:
         patterns:
           - "yveshanoulle/forsgren/*"
+        exclude-patterns:
+          - "yveshanoulle/forsgren/.github/workflows/dependabot_merge_policy.yml"
     # A release is proposed once it is 3 days old: a window to replace a bad
     # release before it reaches installations. Set default-days: 0 to get
     # releases at the next daily check (forsgren#14).
